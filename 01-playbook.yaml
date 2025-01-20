@@ -1,5 +1,5 @@
-- name: PING
+- name: pinging yserver
   hosts: servers
   tasks:
-  - name: Ping Server
+  - name: Ping Server and let me know the status
     ansible.builtin.ping:
