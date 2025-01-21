@@ -1,15 +1,12 @@
 - name: Print Hello world
   hosts: servers
   tasks:
-  - name: Print Hello world
+  - name: Ping -- sumanth
+    ansible.builtin.ping:
+  - name: hello -- Mounika
     ansible.builtin.debug:
-    msg: "Hello world"
-  
-  - name: Print hello earth
-    ansible.builtin.debug:
-    msg: "Hello earth"
+    msg: "hello world"
 
-    tasks:
-    - name: ping
-      ansible.builtin.ping:
+
+
 
