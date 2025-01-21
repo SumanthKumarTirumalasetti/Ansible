@@ -1,0 +1,11 @@
+- name: defining variables
+  hosts: servers
+  become: yes
+  vars:
+    course: DevOps with aws
+    trainer: Siva
+    duration: 120 hrs
+  tasks:
+  - name: priting variables
+    ansible.builtin.debug:
+      msg: " Course is {{ course}}"
