@@ -1,11 +1,12 @@
 - name: Print Hello world
   hosts: servers
   tasks:
-  - name: Ping -- sumanth
+  - name: First task
     ansible.builtin.ping:
-  - name: hello -- Mounika
+    msg: "Pinging webserver"
+  - name: Second task
     ansible.builtin.debug:
-    msg: "hello world"
+    msg: "Hello webserver you are reachable"
 
 
 
