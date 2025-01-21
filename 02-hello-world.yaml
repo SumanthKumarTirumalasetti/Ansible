@@ -1,4 +1,4 @@
-- name: Print Hello world
+- name: Playbook1
   hosts: servers
   tasks:
   - name: First task
@@ -6,7 +6,9 @@
       
   - name: Second task
     ansible.builtin.debug:
-      msg: "Hello webserver you are reachable"
+    msg: "Hello webserver you are reachable"
+  
+
 
 
 
