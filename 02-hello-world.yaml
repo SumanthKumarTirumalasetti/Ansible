@@ -3,10 +3,10 @@
   tasks:
   - name: First task
     ansible.builtin.ping:
-    msg: "Pinging webserver"
+      msg: "Pinging webserver"
   - name: Second task
     ansible.builtin.debug:
-    msg: "Hello webserver you are reachable"
+      msg: "Hello webserver you are reachable"
 
 
 
