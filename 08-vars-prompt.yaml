@@ -1,7 +1,7 @@
 - name: testing var prompt
   hosts: servers
   become: yes
-  var_prompt:
+  vars_prompt:
   - name: course
     prompt: Please enter course name
   - name: duration
