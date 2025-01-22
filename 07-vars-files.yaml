@@ -1,9 +1,9 @@
 - name: variables from files
   hosts: servers
   become: yes
-  vars_files:
-  - 06-task-vars.yaml
+  vars_files: # Getting the variables from different file
+  - vars.yaml
   tasks:
-  - name: print course information
+  - name: print course information 
     ansible.builtin.debug:
      msg: "Course is {{ course }}, trainer is {{ trainer }} and the duration is {{ duration }}"
