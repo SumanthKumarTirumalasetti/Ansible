@@ -15,4 +15,4 @@
     vars:
       greet: "Play from TASK level"
     ansible.builtin.debug:
-      msg: "Hello from {{ greet }}"
+      msg: "{{ greet }}"
