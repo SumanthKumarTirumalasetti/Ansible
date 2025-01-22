@@ -5,10 +5,10 @@
     greet: "Play from PLAY level"
   vars_files:
   - vars.yaml
-  vars_prompt:
-  - name: greet
-    prompt: please enter greet value
-    private: no
+  # vars_prompt:
+  # - name: greet
+  #   prompt: please enter greet value
+  #   private: no
   
   tasks:
   - name: priting testing var preferences
