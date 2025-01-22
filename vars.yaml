@@ -1,3 +1,4 @@
 course: "DevOps with AWS"
 duration: 120hrs
 trainer: Siva
+greet: "Play from file level"
