@@ -1,0 +1,12 @@
+- name: testing loops
+  hosts: servers
+  become: yes
+  tasks:
+  - name: priting softwares
+    ansible.builtin.debug:
+      msg: "Priting softwares by order {{ item }}"
+    loop:
+    - java
+    - python
+    - c++
+    - oracle 
