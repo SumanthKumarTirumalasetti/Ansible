@@ -1,6 +1,6 @@
 - name: testing var preferences
-  hosts: local
-  connection: local
+  hosts: servers
+  become: yes
   vars:
     greet: "Play from PLAY level"
   vars_files:
@@ -16,6 +16,3 @@
       greet: "Play from TASK level"
     ansible.builtin.debug:
       msg: "{{ greet }}"
-
-
-  
