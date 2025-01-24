@@ -12,7 +12,7 @@
   
   tasks:
   - name: priting testing var preferences
-    vars:
-      greet: "Play from TASK level"
+    # vars:
+    #   greet: "Play from TASK level"
     ansible.builtin.debug:
       msg: "{{ greet }}"
