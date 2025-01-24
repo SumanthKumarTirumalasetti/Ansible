@@ -3,12 +3,12 @@
   become: yes
   vars:
     greet: "Play from PLAY level"
-  vars_files:
-  - vars.yaml
-  # vars_prompt:
-  # - name: greet
-  #   prompt: please enter greet value
-  #   private: false
+  # vars_files:
+  # - vars.yaml
+  vars_prompt:
+  - name: greet
+    prompt: please enter greet value
+    private: false
   
   tasks:
   - name: priting testing var preferences
