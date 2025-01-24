@@ -7,7 +7,7 @@
   - vars.yaml
   vars_prompt:
   - name: greet
-    prompt: please enter greet value
+    prompt: I should not come
     private: false
   
   tasks:
