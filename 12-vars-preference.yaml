@@ -8,7 +8,7 @@
   vars_prompt:
   - name: greet
     prompt: please enter greet value
-    private: true
+    private: false
   
   tasks:
   - name: priting testing var preferences
