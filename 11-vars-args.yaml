@@ -1,7 +1,0 @@
-- name: testing argumaent level variables
-  hosts: servers
-  become: yes
-  tasks:
-  - name: Printing couse information
-    ansible.builtin.debug:
-      msg: "Course is {{ course }}, trainer is {{ trainer }} and the duration is {{ duration }}"
