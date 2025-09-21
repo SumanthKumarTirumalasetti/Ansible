@@ -1,5 +1,5 @@
 - name: vars from inventory
-  hosts: web
+  hosts: node
   tasks:
   - name: print course information
     ansible.builtin.debug:
