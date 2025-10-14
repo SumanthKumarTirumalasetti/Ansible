@@ -6,7 +6,7 @@
     prompt: Please enter a valid number
     private: no
   tasks:
-  - name: testing when if/when condition
+  - name: testing when condition
     ansible.builtin.debug:
       msg: "Your number is {{ my_value }}"
     when: my_value > 10
