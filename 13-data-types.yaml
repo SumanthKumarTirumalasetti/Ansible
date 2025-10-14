@@ -1,0 +1,20 @@
+- name: testing Datatype
+  connection: local
+  hosts: local
+  vars:
+    NAME: "Sumanth"
+    AGE: 31
+    LIVED_IN:
+      - Gudivada
+      - Bhimavaram
+      - Manthena
+      - Vijayawada
+      - Hyderabad
+    COLLEGES:
+      10th: "Montessori Telugu medium"
+      Diploma: "VKR and VNB Polytechnic"
+      Btech: BIET
+  tasks:
+  - name: Printing User information
+    ansible.builtin.debug:
+      msg: "user name is {{ NAME }} and Age is {{ AGE }} adn he lived in {{ LIVED_IN }} and colleges went to {{ COLLEGES }}" 
