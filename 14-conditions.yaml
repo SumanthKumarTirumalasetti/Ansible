@@ -1,6 +1,8 @@
 - name: testing conditions
   connection: local
   hosts: local
+  vars:
+    my_value: 12
   vars_prompt:
   - name: "my_value"
     prompt: Please enter a valid number
