@@ -1,8 +1,8 @@
 - name: Testing preferences
   connection: local
   hosts: local
-  vars:
-    GREET: "Play level"
+  # vars:
+  #   GREET: "Play level"
   # vars_files:
   #   - course.yaml
   # vars_prompt:
