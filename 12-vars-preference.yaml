@@ -3,8 +3,8 @@
   hosts: local
   vars:
     GREET: "Play level"
-  vars_files:
-    - course.yaml
+  # vars_files:
+  #   - course.yaml
   vars_prompt:
     - name: GREET
       prompt: Please enter PROMPT varible value
