@@ -1,0 +1,12 @@
+- name: testing conditions
+  connection: local
+  hosts: local
+  vars_prompt:
+  - name: "my_value"
+    prompt: Please enter a valid number
+    private: no
+  tasks:
+  - name: testing when if/when condition
+    ansible.builtin.debug:
+      msg: "Your number is {{ my_value }}"
+    when: my_value > 10
