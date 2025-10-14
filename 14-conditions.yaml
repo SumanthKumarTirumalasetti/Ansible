@@ -17,7 +17,7 @@
   connection: local
   hosts: local 
   vars_prompt:
-  - name: "my_value"
+  - name: "my_value1"
     prompt: Please enter a valid number
     private: no
   tasks:
