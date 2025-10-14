@@ -8,12 +8,30 @@
   vars_prompt:
     - name: GREET
       prompt: Please enter PROMPT varible value
-      private: false
-  
+      private: false 
   tasks:
   - name: Testing task level variables
     vars:
       GREET: "Task level"
     ansible.builtin.debug:
       msg: "Hello from {{ GREET }}"
+
+
+# - name: variables
+#   hosts: local
+#   connection: local
+#   vars: # PLAY level variables
+#     GREET: "PLAY"
+#   vars_files:
+#     - course.yaml
+#   vars_prompt:
+#   - name: GREET
+#     prompt: Enter the value
+#     private: false
+#   tasks:
+#   - name: print the variable
+#     vars:
+#       GREET: "TASK"
+#     ansible.builtin.debug:
+#       msg: "Hello from {{ GREET }}"
   
