@@ -11,8 +11,8 @@
       private: false 
   tasks:
   - name: Testing task level variables
-    vars:
-      GREET: "Task level"
+    # vars:
+    #   GREET: "Task level"
     ansible.builtin.debug:
       msg: "Hello from {{ GREET }}"
 
